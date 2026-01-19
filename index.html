@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AISH 전문가 마스터 클래스 | 5주의 혁신</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #003366; /* 신뢰감을 주는 네이비 */
+            --accent-color: #007BFF; /* 강조 블루 */
+            --point-color: #FFD700; /* 행동 유도 골드 */
+            --bg-light: #f8f9fa;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--text-dark);
+            word-break: keep-all;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), 
+                        url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h2 { font-size: 1.5rem; color: var(--point-color); margin-bottom: 10px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; font-weight: 900; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px; opacity: 0.9; }
+
+        /* Sections */
+        .section { padding: 80px 20px; max-width: 1000px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2rem; color: var(--primary-color); }
+        .section-title hr { width: 50px; border: 2px solid var(--accent-color); margin: 20px auto; }
+
+        /* Problem/Solution */
+        .why-box { background: var(--bg-light); padding: 40px; border-radius: 15px; border-left: 5px solid var(--accent-color); }
+
+        /* Curriculum Cards */
+        .curriculum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .curr-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .curr-card:hover { transform: translateY(-5px); }
+        .curr-card span { color: var(--accent-color); font-weight: bold; font-size: 0.9rem; }
+        .curr-card h3 { margin: 10px 0; font-size: 1.2rem; }
+
+        /* Info Table */
+        .info-table { width: 100%; border-collapse: collapse; margin-top: 30px; }
+        .info-table td { padding: 15px; border-bottom: 1px solid #ddd; }
+        .info-table td:first-child { font-weight: bold; width: 30%; color: var(--primary-color); }
+
+        /* CTA Form */
+        .cta-section { background: var(--bg-light); border-radius: 20px; padding: 50px 20px; text-align: center; }
+        .form-container { max-width: 500px; margin: 30px auto; text-align: left; background: white; padding: 30px; border-radius: 10px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], select {
+            width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;
+        }
+        .btn-submit {
+            width: 100%; background: var(--accent-color); color: white; border: none; padding: 15px;
+            font-size: 1.2rem; font-weight: bold; border-radius: 5px; cursor: pointer; margin-top: 20px;
+        }
+        .btn-submit:hover { background: #0056b3; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h2>AISH 중급 회원을 위한 시크릿 마스터 클래스</h2>
+        <h1>5주 만에 AI 활용 능력<br>상위 1% 전문가로 도약하십시오.</h1>
+        <p>이론은 끝났습니다. 정부과제부터 전자책 출간까지,<br>결과물로 증명하는 전문가(Expert) 훈련 과정에 초대합니다.</p>
+        <div style="font-weight: bold; color: var(--point-color);">100% 원격 라이브 실습 | 전문가 직강 | 실전 중심</div>
+    </header>
+
+    <section class="section">
+        <div class="section-title">
+            <h2>왜 이 과정인가?</h2>
+            <hr>
+        </div>
+        <div class="why-box">
+            <p><strong>AI를 배웠지만 여전히 실무 적용이 막막하신가요?</strong></p>
+            <p>AISH 전문가 과정은 단순 강의가 아닙니다. 강의가 끝난 뒤 당신의 손에는 실제 사업계획서, 출간된 전자책, 구축된 홈페이지와 자동화 시스템이 남게 됩니다. 당신을 단순 사용자에서 '가치를 만드는 창조자'로 변화시킵니다.</p>
+        </div>
+    </section>
+
+    <section class="section" style="background: white;">
+        <div class="section-title">
+            <h2>교육 개요</h2>
+            <hr>
+        </div>
+        <table class="info-table">
+            <tr><td>교육 기간</td><td>2026년 2월 11일(수) ~ 3월 18일(수) (5주간)</td></tr>
+            <tr><td>교육 일시</td><td>매주 수요일 저녁 9시 ~ 11시 (골든타임)</td></tr>
+            <tr><td>교육 장소</td><td>온라인 실시간 (줌 / 구글미트)</td></tr>
+            <tr><td>교육 목표</td><td>실질적 결과물 도출 및 전문가 자격 증명</td></tr>
+        </table>
+    </section>
+
+    <section class="section">
+        <div class="section-title">
+            <h2>커리큘럼 상세</h2>
+            <hr>
+        </div>
+        <div class="curriculum-grid">
+            <div class="curr-card"><span>Session 1</span><h3>정부지원사업 마스터</h3><p>회사 정부과제 사업계획서 전문가 되기</p></div>
+            <div class="curr-card"><span>Session 2</span><h3>영상 마케팅 정복</h3><p>AI 활용 제품 홍보 CF 영상 제작하기</p></div>
+            <div class="curr-card"><span>Session 3</span><h3>퍼스널 브랜딩</h3><p>5주 만에 내 이름으로 전자책 출간하기</p></div>
+            <div class="curr-card"><span>Session 4</span><h3>웹사이트 구축</h3><p>1시간 만에 완성하는 회사 랜딩페이지</p></div>
+            <div class="curr-card"><span>Session 5</span><h3>업무 혁신</h3><p>나만의 AI 업무자동화 에이전트 완성</p></div>
+            <div class="curr-card"><span>Session 6</span><h3>스마트 워크</h3><p>Notebook LM 기반 제안서 즉시 제작</p></div>
+            <div class="curr-card"><span>Session 7</span><h3>협업 툴 정복</h3><p>구글 워크스페이스 & 제미나이 마스터</p></div>
+            <div class="curr-card"><span>Session 8</span><h3>멀티모달 콘텐츠</h3><p>미드저니 & 캔바 기반 홍보물 완성</p></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="cta-section">
+            <h2>2026년, 당신의 커리어를 바꿀 5주</h2>
+            <p style="color: #d9534f; font-weight: bold;">접수 기간: 2026. 01. 26 ~ 01. 30 (단 5일간)</p>
+            
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label>성명</label>
+                        <input type="text" placeholder="성함을 입력하세요">
+                    </div>
+                    <div class="form-group">
+                        <label>연락처</label>
+                        <input type="text" placeholder="010-0000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label>이메일</label>
+                        <input type="email" placeholder="example@aish.com">
+                    </div>
+                    <div class="form-group">
+                        <label>참가 희망 과정</label>
+                        <select>
+                            <option>전문가 과정 전체 신청</option>
+                            <option>부분 세션 참여 (상담 후 결정)</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn-submit">전문가 과정 신청하기</button>
+                </form>
+            </div>
+            <p style="font-size: 0.9rem; color: #666;">문의: AISH 교육운영팀 | 2026 All Rights Reserved.</p>
+        </div>
+    </section>
+
+</body>
+</html>
